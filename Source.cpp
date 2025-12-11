@@ -18,6 +18,10 @@ void main()
 		exit(1);
 	}
 	cout << "Please enter the student id, name, and five marks:\n";
-	cin >> id >> name >> m1 >> m2 >> m3 >> m4 >> m5;
-	outputFile << id << " " << name << " " << m1 << " " << m2 << " " << m3 << " " << m4 << " " << m5 << " ";
+	cout << "\nPress <Ctrl + Z> to stop.\n";
+	
+	while (cin >> id >> name >> m1 >> m2 >> m3 >> m4 >> m5)
+	{
+		outputFile << id << " " << name << " " << m1 << " " << m2 << " " << m3 << " " << m4 << " " << m5 << endl;
+	}
  }
